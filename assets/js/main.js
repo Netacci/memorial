@@ -1,6 +1,6 @@
 //preloader
 $(window).on('load', function () {
-	$('#preloader').delay(1000).slideUp(1000);
+	$('#preloader').delay(500).slideUp(1000);
 });
 
 $('.slider').slick({
