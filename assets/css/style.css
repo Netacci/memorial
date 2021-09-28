@@ -66,9 +66,7 @@
 }
 
 .button-secondary {
-  background: #fff0f2;
   color: #2b2d42;
-  border: 1px solid #fff0f2;
 }
 
 .button-secondary:hover {
@@ -119,6 +117,19 @@ a {
   font-size: 0.875rem;
 }
 
+.header-hero .head-fir {
+  position: relative;
+}
+
+.header-hero .head-fir .icc {
+  position: absolute;
+  color: #f55555;
+  -webkit-transform: rotate(-45deg) !important;
+          transform: rotate(-45deg) !important;
+  left: 20%;
+  top: 14%;
+}
+
 .header-hero .head-fir .hero-head {
   font-family: "Rye", "cursive";
   color: #860e0e;
@@ -148,6 +159,16 @@ a {
 
 .header-hero .hero-details {
   background: #ffffff;
+  position: relative;
+}
+
+.header-hero .hero-details .iccc {
+  position: absolute;
+  color: #f55555;
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+  left: 74%;
+  top: -39%;
 }
 
 .navscroll {
@@ -170,6 +191,7 @@ a {
 
 .gallery {
   background: #ffffff;
+  padding: 1px;
 }
 
 .gallery .gallery-title {
@@ -195,6 +217,249 @@ a {
   background: #860e0e;
   top: 100%;
   left: 33%;
+}
+
+.hearts, .hearts2 {
+  width: 5%;
+  height: 25%;
+  min-width: 100px;
+  min-height: 250px;
+  position: absolute;
+  z-index: 10;
+}
+
+.heart, .hearts2 .heart2 {
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  min-height: 25px;
+  min-width: 25px;
+  color: red;
+  opacity: 0;
+}
+
+.heart {
+  -webkit-animation: floating-heart 20s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+          animation: floating-heart 20s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+}
+
+@-webkit-keyframes floating-heart {
+  0% {
+    opacity: 0;
+    bottom: 0%;
+    left: 0%;
+  }
+  10% {
+    opacity: 1;
+    bottom: 40%;
+    left: 30%;
+  }
+  20% {
+    bottom: 70%;
+    left: 50%;
+  }
+  30% {
+    bottom: 100%;
+    left: 70%;
+  }
+  40% {
+    opacity: 1;
+    bottom: 150%;
+    left: 90%;
+  }
+  48% {
+    opacity: 0;
+    bottom: 200%;
+    left: 95%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 200%;
+    left: 100%;
+  }
+}
+
+@keyframes floating-heart {
+  0% {
+    opacity: 0;
+    bottom: 0%;
+    left: 0%;
+  }
+  10% {
+    opacity: 1;
+    bottom: 40%;
+    left: 30%;
+  }
+  20% {
+    bottom: 70%;
+    left: 50%;
+  }
+  30% {
+    bottom: 100%;
+    left: 70%;
+  }
+  40% {
+    opacity: 1;
+    bottom: 150%;
+    left: 90%;
+  }
+  48% {
+    opacity: 0;
+    bottom: 200%;
+    left: 95%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 200%;
+    left: 100%;
+  }
+}
+
+.heart:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.heart:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.heart:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.heart:nth-child(4) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.heart:nth-child(5) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.heart:nth-child(6) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.heart:nth-child(7) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.hearts2 .heart2 {
+  -webkit-animation: floating-heart2 20s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+          animation: floating-heart2 20s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+}
+
+@-webkit-keyframes floating-heart2 {
+  0% {
+    opacity: 0;
+    bottom: 0%;
+    right: 10%;
+  }
+  10% {
+    opacity: 1;
+    bottom: 40%;
+    right: 30%;
+  }
+  20% {
+    bottom: 70%;
+    right: 50%;
+  }
+  30% {
+    bottom: 100%;
+    right: 70%;
+  }
+  40% {
+    opacity: 1;
+    bottom: 150%;
+    right: 90%;
+  }
+  48% {
+    opacity: 0;
+    bottom: 200%;
+    right: 95%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 200%;
+    right: 95%;
+  }
+}
+
+@keyframes floating-heart2 {
+  0% {
+    opacity: 0;
+    bottom: 0%;
+    right: 10%;
+  }
+  10% {
+    opacity: 1;
+    bottom: 40%;
+    right: 30%;
+  }
+  20% {
+    bottom: 70%;
+    right: 50%;
+  }
+  30% {
+    bottom: 100%;
+    right: 70%;
+  }
+  40% {
+    opacity: 1;
+    bottom: 150%;
+    right: 90%;
+  }
+  48% {
+    opacity: 0;
+    bottom: 200%;
+    right: 95%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 200%;
+    right: 95%;
+  }
+}
+
+.heart2:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.heart2:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.heart2:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.heart2:nth-child(4) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.heart2:nth-child(5) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.heart2:nth-child(6) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.heart2:nth-child(7) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 .foot .footer .social-icon {
@@ -233,43 +498,6 @@ a {
 }
 
 @media (min-width: 992px) {
-  .header nav .desktop-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header nav .desktop-nav .nav-lin {
-    padding: 1rem;
-    color: #2b2d42;
-    font-weight: 500;
-    position: relative;
-  }
-  .header nav .desktop-nav .nav-lin::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    left: 0;
-    bottom: 108px;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-  }
-  .header nav .desktop-nav .nav-lin:hover::before {
-    top: 80%;
-    -webkit-transform: translateY(1px);
-            transform: translateY(1px);
-    background: #860e0e;
-  }
-  .header nav .desktop-nav .active {
-    background: blue;
-  }
-  .header nav .mobile-nav {
-    display: none !important;
-  }
-  .header .hero-image {
-    margin: initial;
-    width: 25%;
-  }
   .header-hero {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -277,5 +505,145 @@ a {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  @-webkit-keyframes floating-heart {
+    0% {
+      opacity: 0;
+      bottom: 0%;
+      left: 0%;
+    }
+    10% {
+      opacity: 1;
+      bottom: 40%;
+      left: 300%;
+    }
+    20% {
+      bottom: 70%;
+      left: 350%;
+    }
+    30% {
+      bottom: 100%;
+      left: 450%;
+    }
+    40% {
+      opacity: 1;
+      bottom: 150%;
+      left: 500%;
+    }
+    48% {
+      opacity: 0;
+      bottom: 200%;
+      left: 600%;
+    }
+    100% {
+      opacity: 0;
+      bottom: 200%;
+      left: 700%;
+    }
+  }
+  @keyframes floating-heart {
+    0% {
+      opacity: 0;
+      bottom: 0%;
+      left: 0%;
+    }
+    10% {
+      opacity: 1;
+      bottom: 40%;
+      left: 300%;
+    }
+    20% {
+      bottom: 70%;
+      left: 350%;
+    }
+    30% {
+      bottom: 100%;
+      left: 450%;
+    }
+    40% {
+      opacity: 1;
+      bottom: 150%;
+      left: 500%;
+    }
+    48% {
+      opacity: 0;
+      bottom: 200%;
+      left: 600%;
+    }
+    100% {
+      opacity: 0;
+      bottom: 200%;
+      left: 700%;
+    }
+  }
+  @-webkit-keyframes floating-heart2 {
+    0% {
+      opacity: 0;
+      bottom: 0%;
+      right: 10%;
+    }
+    10% {
+      opacity: 1;
+      bottom: 40%;
+      right: 300%;
+    }
+    20% {
+      bottom: 70%;
+      right: 350%;
+    }
+    30% {
+      bottom: 100%;
+      right: 450%;
+    }
+    40% {
+      opacity: 1;
+      bottom: 150%;
+      right: 500%;
+    }
+    48% {
+      opacity: 0;
+      bottom: 200%;
+      right: 600%;
+    }
+    100% {
+      opacity: 0;
+      bottom: 200%;
+      right: 700%;
+    }
+  }
+  @keyframes floating-heart2 {
+    0% {
+      opacity: 0;
+      bottom: 0%;
+      right: 10%;
+    }
+    10% {
+      opacity: 1;
+      bottom: 40%;
+      right: 300%;
+    }
+    20% {
+      bottom: 70%;
+      right: 350%;
+    }
+    30% {
+      bottom: 100%;
+      right: 450%;
+    }
+    40% {
+      opacity: 1;
+      bottom: 150%;
+      right: 500%;
+    }
+    48% {
+      opacity: 0;
+      bottom: 200%;
+      right: 600%;
+    }
+    100% {
+      opacity: 0;
+      bottom: 200%;
+      right: 700%;
+    }
   }
 }

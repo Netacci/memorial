@@ -23,9 +23,9 @@
 }
 .button-secondary {
 	@extend %button;
-	background: $light-pink;
+
 	color: $text;
-	border: 1px solid $light-pink;
+	// border: 1px solid $light-pink;
 	&:hover {
 		transform: scale(0.98);
 		color: $text;
